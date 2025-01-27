@@ -1,0 +1,16 @@
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+
+
+.app {
+  display: flex;
+  justify-content: center;  /* Centra el contenido horizontalmente */
+  align-items: center;      /* Centra el contenido verticalmente */
+  min-height: 100vh;        /* Asegura que la app cubra toda la altura de la pantalla */
+  width: 100vw;             /* Ancho completo de la ventana */
+  overflow: hidden;         /* Evita el desplazamiento si la imagen es más grande */
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+} 
+
+

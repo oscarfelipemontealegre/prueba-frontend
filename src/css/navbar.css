@@ -1,0 +1,107 @@
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+
+
+.navbar {
+    position: fixed; /* Mantiene la navbar en la parte superior al desplazarse */
+    top: 0; /* Alinea la navbar en la parte superior */
+    left: 0;
+    right: 0;
+    z-index: 20; /* Asegúrate de que la navbar esté por encima de la imagen de fondo */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: rgb(195, 101, 29); /* Cambia el color del texto según sea necesario */
+    background-color: rgba(204, 10, 10, 0.094); /* Fondo semi-transparente */
+}
+/* Estilo para el logo de la navbar */
+.navbar-logo {
+    max-height: 50px; /* Altura máxima del logo */
+    margin-right: 15px; /* Espacio entre el logo y el título */
+}
+
+/* Estilo para los enlaces de la navbar */
+.navbar-links {
+    color: #007bff; /* Color del texto del enlace */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.navbar-links li {
+    margin-left: 90px; /* Espacio entre los enlaces */
+    color: #12100e;
+}
+
+.navbar-link {
+    color: #000000; /* Color del texto de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Negrita */
+    font-size: 16px; /* Tamaño de fuente legible */
+    transition: color #fff 0.3s, text-decoration 0.3s; /* Transición suave para color y subrayado */
+}
+
+
+
+/* Diseño Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Cambiar dirección a columna */
+        padding: 15px; /* Más espacio interno */
+    }
+
+    .navbar-links {
+        flex-direction: column; /* Mostrar los enlaces en columna */
+        gap: 10px; /* Espacio entre enlaces */
+    }
+
+    .navbar-links li {
+        margin-left: 0; /* Quitar márgenes laterales */
+        margin-bottom: 10px; /* Espacio entre los enlaces */
+    }
+
+    .navbar-link {
+        font-size: 14px; /* Reducir tamaño de fuente en pantallas pequeñas */
+    }
+}
+
+/* Estilo para el contenedor de texto sobre la imagen */
+.text-overlay {
+    position: absolute; /* Posiciona el texto sobre la imagen */
+    top: 70%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la posición para centrar completamente */
+    color: rgb(255, 252, 252); /* Color del texto */
+    text-align: center; /* Centra el texto */
+    z-index: 20; /* Asegura que el texto esté por encima de otros elementos */
+    margin-bottom: 60px;
+}
+
+/* Estilo para el encabezado */
+.text-overlay h1 {
+    font-size: 100px; /* Tamaño del encabezado */
+    margin: 0; /* Elimina márgenes */
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+/* Estilo para el párrafo */
+.text-overlay p {
+    font-size: 80px; /* Tamaño del párrafo */
+    margin-top: -17px; /* Espacio entre el encabezado y el párrafo */
+    color: #d09b48;
+    font-weight: 300;
+    letter-spacing: 4px;
+    
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px; /* Aumenta el espacio entre las tarjetas */
+    background-color: rgba(0, 0, 0, 0); /* Mantiene el fondo transparente */
+}
+

@@ -1,0 +1,112 @@
+/* Contenedor principal */
+.percontainerali {
+    padding: 100px 0;
+    width: 100%; /* Ocupa todo el ancho de la página */
+    margin: 0 auto; /* Centra el contenedor */
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+/* Título de experiencias */
+.experiencias-title-ali-per {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #c99d53;
+}
+
+/* Fila para centrar las tarjetas */
+.row.justify-content-center-ali-per {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Columna de cada tarjeta */
+.col-6.mb-2.per {
+    width: 70%;
+    padding: 10px;
+}
+
+/* Tarjeta */
+.card.shadow.h-100.ali.per {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+/* Tarjeta al pasar el mouse */
+.card.shadow.h-100.ali.per:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor de imagen y texto */
+.card-body-per-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Alinea verticalmente la imagen y el texto */
+    gap: 20px; /* Espaciado entre la imagen y el texto */
+    padding: 20px;
+}
+
+/* Contenedor de la imagen */
+.image-container-ali {
+    flex: 1; /* La imagen ocupa el 40% del ancho disponible */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Imagen de la tarjeta */
+.card-img-top-ali-per {
+    width: 80%; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción */
+    max-height: 150px; /* Limita la altura máxima para evitar imágenes muy grandes */
+    border-radius: 12px;
+    object-fit: cover; /* Ajusta la imagen al contenedor sin distorsión */
+    margin: 0 auto;
+}
+
+/* Contenedor del texto */
+.card-text-container {
+    flex: 2; /* El texto ocupa el 60% del ancho disponible */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaciado entre elementos del texto */
+}
+
+/* Título de la tarjeta */
+.card-title-per {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Texto de la tarjeta */
+.card-text-per {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Botón principal */
+.btn.btn-primary.per {
+    background-color: #ff7b00;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    align-self: flex-start; /* Alinea el botón al inicio del texto */
+}
+
+.btn.btn-primary.per:hover {
+    background-color: #e66a00;
+}

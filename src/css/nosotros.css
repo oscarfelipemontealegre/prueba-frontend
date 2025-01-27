@@ -1,0 +1,80 @@
+
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+
+
+.container {
+    text-align: center;
+    margin-top: 40px;
+    
+}
+
+.instagram-link {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    color: #e1306c;
+}
+
+
+
+.custom-carousel {
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.carousel-image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 300px; /* Tamaño reducido */
+}
+
+.carousel-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-overlay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-icon {
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Estilo para el título "NOSOTROS" */
+.nosotros {
+    color: #d09b48; /* Color del texto */
+    font-weight: 300; /* Peso de la fuente (light) */
+    text-align: center; /* Centrar el texto */
+    font-size: 2rem; /* Tamaño de fuente ajustado */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Estilo para el párrafo */
+.parrafo {
+    color: #131212; /* Color del texto */
+    font-weight: 300; /* Peso de la fuente (light) */
+    text-align: center; /* Centrar el texto */
+    font-size: 1rem; /* Tamaño de fuente ajustado */
+    line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
+    margin: 0 auto; /* Centrar el párrafo en el contenedor */
+    max-width: 700px; /* Ancho máximo para limitar el texto */
+}

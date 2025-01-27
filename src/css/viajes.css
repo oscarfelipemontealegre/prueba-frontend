@@ -1,0 +1,157 @@
+/* Contenedor principal del formulario */
+.travel-form {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título principal */
+.travel-form h1 {
+    text-align: center;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+/* Descripción */
+.travel-form p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Etiquetas de los campos */
+.travel-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Campos de selección */
+.travel-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Radio buttons */
+.travel-form input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Contenedor de experiencias */
+.experiencias-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Botones de experiencias */
+.experiencia-button {
+    flex: 1 0 calc(33.333% - 10px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.experiencia-button.selected {
+    background-color: #e67e22;
+    color: white;
+    border-color: #e67e22;
+}
+
+.experiencia-button:hover {
+    background-color: #d35400;
+    color: white;
+    border-color: #d35400;
+}
+
+/* Campos de fecha */
+.travel-form input[type="date"] {
+    width: calc(50% - 10px);
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Último campo de fecha sin margen derecho */
+.travel-form input[type="date"]:last-child {
+    margin-right: 0;
+}
+
+/* Campos numéricos */
+.travel-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Área de texto */
+.travel-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Botón de envío */
+.travel-form button[type="submit"] {
+    display: block; /* Convierte el botón en un bloque */
+    margin: 20px auto; /* Centra horizontalmente el botón */
+    width: 30%;
+    padding: 15px;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    text-align: center; 
+    
+}
+
+.travel-form button[type="submit"]:hover {
+    background-color: #d35400;
+}
+
+/* Contenedor de cuándo viajar */
+.cuándo-viajar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.cuándo-viajar label {
+    margin-right: 10px;
+}
+
+/* Contenedor de niños y adultos */
+.ninos-adultos {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.ninos-adultos label {
+    margin-right: 10px;
+}

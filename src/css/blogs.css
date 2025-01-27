@@ -1,0 +1,82 @@
+
+.blogs-container {
+    padding: 40px 20px;
+    background-color: #d09b48; /* Color de fondo */
+    text-align: center;
+}
+
+.blogs-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #f5f3f1; /* Color del título */
+}
+
+.blogs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; /* Espacio entre las tarjetas */
+}
+
+.blog-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px); /* Efecto de elevación al pasar el ratón por encima */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.blog-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Asegura que la imagen cubra el área del contenedor */
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-title {
+    font-size: 1.5rem;
+    margin: 0 0 10px;
+    color: #333; /* Color del título del blog */
+}
+
+.blog-description {
+    font-size: 1rem;
+    color: #666; /* Color de la descripción */
+    margin-bottom: 15px;
+}
+
+.blog-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d09b48; /* Color del botón */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.blog-link:hover {
+    background-color: #d09b48; /* Color del botón al pasar el ratón por encima */
+}
+
+/* Estilo responsive para asegurar que las tarjetas se vean bien en dispositivos móviles */
+@media (max-width: 768px) {
+    .blogs-title {
+        font-size: 2rem;
+    }
+
+    .blog-title {
+        font-size: 1.25rem;
+    }
+
+    .blog-description {
+        font-size: 0.875rem;
+    }
+}

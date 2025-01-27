@@ -1,0 +1,96 @@
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+
+
+/* Estilo para el contenedor de la imagen */
+.image-container {
+    position: relative; /* Cambiar a relative para que se comporte como parte del flujo del documento */
+    width: 25vw; /* Aumenta el ancho de la tarjeta */
+    height: 250px;
+    border: 6px solid #ffffff; /* Borde blanco más visible */
+    border-radius: 25px; /* Bordes redondeados */
+    overflow: hidden;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Sombra para dar efecto de profundidad */
+    background: rgba(255, 255, 255, 0.1); /* Fondo blanco semitransparente */
+    margin-bottom: 90px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover para la tarjeta */
+.image-container:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el cursor */
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para la imagen dentro de la tarjeta */
+.card-img-top {
+    width: 100%; /* Ajuste completo al contenedor */
+    height: auto; /* Altura automática */
+    max-height: 350px; /* Ajuste de altura para mantener proporciones */
+    object-fit: cover; /* Recorta la imagen para ajustarse correctamente */
+    border-radius: 15px;
+}
+
+/* Estilo para la superposición de la tarjeta */
+.card-overlay {
+    position: absolute; /* Mantiene la superposición dentro del contenedor de la tarjeta */
+    top: 120%; /* Ajuste de posición para que se vea más centrada */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    color: white;
+    padding: -20px; /* Espaciado más amplio */
+    font-size: 1.5rem; /* Texto más grande */
+    text-align: center;
+    width: 100%;
+}
+
+/* Estilo para la superposición de la imagen */
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 0 0 25px 25px;
+    display: flex; /* Alinea elementos en fila */
+    align-items: center; /* Alinea verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    flex-direction: row-reverse; /* Invierte el orden: texto antes del icono */
+}
+
+/* Estilo para el icono */
+.image-overlay i {
+    font-size: 5 rem; /* Icono más grande */
+    margin-left: 40px;
+    margin-top: 130px;
+    
+}
+
+/* Estilo para el texto superpuesto */
+.overlay-text {
+    font-size: 12 px;
+    font-weight: bold;
+    margin-left: 60px;
+    margin-top: 150px;
+    
+    
+}
+
+/* Estilo para lafila de tarjetas */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px; /* Más espacio entre tarjetas */
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* Espacio entre cada tarjeta */
+.card {
+    margin-bottom: 40px; 
+}

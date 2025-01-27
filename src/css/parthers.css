@@ -1,0 +1,49 @@
+/* Contenedor principal */
+
+
+/* Título de alianzas estratégicas */
+.experiencias-title-ali {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #e67e22;
+}
+
+/* Fila para centrar los logos */
+.row.justify-content-center-ali {
+    display: flex;
+    flex-wrap: nowrap; /* No permitir el wrapping para que queden en una sola línea */
+    justify-content: center;
+    gap: 20px; /* Espacio entre logos */
+    overflow-x: auto; /* Permitir scroll horizontal si no caben en una sola línea */
+}
+
+/* Columna de cada logo */
+.col-md-2.mb-4.ali {
+    flex: 0 0 auto; /* No permitir flex-grow ni flex-shrink */
+    width: 120px; /* Ancho fijo para cada logo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+/* Imagen de la tarjeta */
+.card-img-top-ali {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Contenedor para el texto de "sin logo" */
+.no-logo.ali {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1rem;
+    color: #ccc;
+}
